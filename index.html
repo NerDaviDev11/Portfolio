@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>David | Portfolio Resume</title>
+<title>David | Portfolio</title>
 
 <style>
 body {
@@ -15,50 +15,69 @@ body {
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  background: #0f172a;
+  padding: 15px 0;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #334155;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 h1 {
-  font-size: 44px;
+  font-size: 50px;
   margin-bottom: 5px;
 }
 
-h2 {
-  margin-top: 40px;
-  border-bottom: 1px solid #334155;
-  padding-bottom: 6px;
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
 }
 
-h3 {
-  margin-top: 20px;
-  color: #38bdf8;
+.section {
+  margin-top: 60px;
 }
 
 .card {
   background: #1e293b;
-  padding: 18px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 14px;
   margin-top: 15px;
 }
 
-ul {
-  margin-top: 10px;
+h2 {
+  border-bottom: 1px solid #334155;
+  padding-bottom: 5px;
 }
 
 .highlight {
   color: #38bdf8;
-  font-weight: bold;
 }
 
-small {
-  color: #94a3b8;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 footer {
-  margin-top: 60px;
   text-align: center;
+  margin-top: 60px;
   color: #64748b;
 }
 </style>
@@ -69,137 +88,125 @@ footer {
 
 <div class="container">
 
-<h1>David</h1>
-<small>STEAM-focused systems builder | Age 11 | Beijing, China</small>
+<!-- NAV -->
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#writing">Writing</a>
+<a href="#resume">Resume</a>
+</nav>
 
-<p>
-I build systems that turn complex ideas into structured, working reality—combining technology, narrative, and analysis into complete projects.
+<!-- HOME -->
+<section id="home">
+<h1>David</h1>
+<p class="subtitle">
+STEAM-focused systems builder | Age 11 | Beijing, China
 </p>
 
-<h2>1. Personal Information</h2>
 <div class="card">
-<b>Name:</b> David<br>
-<b>Age:</b> 11 (Born October 24, 2014)<br>
-<b>Location:</b> Beijing, China
+I build systems that turn complex ideas into structured, working reality—combining technology, storytelling, and analysis into complete projects.
 </div>
+</section>
 
-<h2>2. Professional Identity</h2>
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>About Me</h2>
+
 <div class="card">
 I am a STEAM-focused student (Science, Technology, Engineering, Artificial Intelligence, Mathematics) who builds systems that combine technical design, creative storytelling, and real-world problem-solving.<br><br>
 
 My work focuses on systems thinking—understanding how components interact, break, evolve, and influence outcomes.<br><br>
 
-I consistently work under constraints, including scholarship-based access to education, which has strengthened my independence and resilience.
+I work under constraints, including scholarship-based education access, which has strengthened independence and resilience.
 </div>
 
-<h2>3. Education</h2>
 <div class="card">
-<b>Prisma Online School</b><br><br>
+<b>Education:</b> :contentReference[oaicite:1]{index=1}
+</div>
+</section>
 
-- Project-based STEAM learning environment<br>
-- Independent research and structured output<br>
-- Systems thinking and problem solving focus
+<!-- PROJECTS -->
+<section id="projects" class="section">
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<b>🎮 Rainforests for Change</b><br>
+Finalist — Games for Change<br><br>
+Environmental systems-based 2D platformer<br>
+<a class="highlight" href="https://nerdavidev11.itch.io">Play Game</a>
 </div>
 
-<h2>4. Core Focus Areas</h2>
 <div class="card">
+<b>📖 Spy Novel</b><br>
+14-chapter Cold War narrative<br><br>
+Realistic espionage storytelling with psychological depth
+</div>
+
+<div class="card">
+<b>🎭 Tragic Play</b><br>
+Five-act structure exploring authority and collapse
+</div>
+
+<div class="card">
+<b>🎙 N.E.R.D. Podcast</b><br>
+Science + systems thinking analysis series (private)
+</div>
+
+</div>
+</section>
+
+<!-- WRITING -->
+<section id="writing" class="section">
+<h2>Writing</h2>
+
+<div class="card">
+<b>Spy Novel — Opening</b><br><br>
+
+Berlin, 1962.<br><br>
+
+Theodore Caninam checked his watch. The ticking felt alive in the dead city.<br><br>
+
+Rook was late.<br><br>
+
+“The crow has landed in your nest.”
+</div>
+
+<div class="card">
+<b>Tragic Play</b><br>
+Five-act drama about power, truth, and collapse.
+</div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section">
+<h2>Resume Summary</h2>
+
+<div class="card">
+<b>Key Achievements</b>
 <ul>
-<li>Science and experimental reasoning</li>
-<li>Software and game systems design</li>
-<li>Artificial intelligence and computational thinking</li>
-<li>Mathematical logic and pattern analysis</li>
-<li>Narrative structure and long-form writing</li>
-<li>Accessibility and inclusive design</li>
+<li>Games for Change Finalist</li>
+<li>Completed 14-chapter novel</li>
+<li>Completed 5-act play</li>
+<li>Built multiple STEAM projects</li>
 </ul>
 </div>
 
-<h2>5. Key Achievements</h2>
 <div class="card">
-
-<p class="highlight">Finalist — Games for Change Student Challenge</p>
-<p>for Rainforests for Change</p>
-
+<b>Skills</b>
 <ul>
-<li>Completed 14-chapter spy novel</li>
-<li>Wrote a five-act tragic play</li>
-<li>Produced private analytical podcast (N.E.R.D.)</li>
-<li>Completed interdisciplinary STEAM projects</li>
-</ul>
-
-</div>
-
-<h2>6. Major Projects</h2>
-
-<div class="card">
-<h3>Rainforests for Change</h3>
-<p>Solo-developed 2D platformer for environmental systems thinking.</p>
-
-<ul>
-<li>4 gameplay levels</li>
-<li>NPC dialogue systems</li>
-<li>Environmental restoration mechanics</li>
-<li>Hazard-based platforming</li>
-</ul>
-
-<p><a class="highlight" href="https://nerdavidev11.itch.io">Play Game</a></p>
-</div>
-
-<div class="card">
-<h3>Spy Novel (Completed)</h3>
-<p>14-chapter Cold War narrative focused on realism and psychological depth.</p>
-
-<ul>
-<li>Espionage and intelligence systems</li>
-<li>Betrayal and trust dynamics</li>
-<li>Psychological tension</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Tragic Play</h3>
-<p>Five-act drama exploring authority and moral collapse.</p>
-</div>
-
-<div class="card">
-<h3>N.E.R.D. Podcast</h3>
-<p>Private analytical series on science, technology, and systems thinking.</p>
-</div>
-
-<div class="card">
-<h3>Accessibility Project</h3>
-<p>Game design research focused on inclusive systems.</p>
-</div>
-
-<h2>7. Skills</h2>
-<div class="card">
-<ul>
-<li>Systems design</li>
-<li>Game development</li>
+<li>Game design & systems thinking</li>
 <li>Programming experimentation</li>
 <li>Long-form writing</li>
-<li>Analytical reasoning</li>
+<li>AI & computational thinking</li>
 </ul>
 </div>
-
-<h2>8. Working Style</h2>
-<div class="card">
-- Independent and self-directed<br>
-- Focused on structured output<br>
-- Long-term project persistence<br>
-- Works under constraints<br>
-- Builds complete systems
-</div>
-
-<h2>9. Goals</h2>
-<div class="card">
-- Publish creative works publicly<br>
-- Develop AI and programming systems<br>
-- Build large-scale STEAM projects<br>
-- Collaborate with high-level creators
-</div>
+</section>
 
 <footer>
-<p>David — Portfolio Resume</p>
+<p>David — Portfolio Site</p>
 </footer>
 
 </div>
